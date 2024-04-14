@@ -1,6 +1,7 @@
 {
   "name": "worldcupfootballscoreboard",
   "private": true,
+  "author": "dineshkumarc",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
