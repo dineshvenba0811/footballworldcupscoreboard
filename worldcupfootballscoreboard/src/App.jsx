@@ -3,7 +3,6 @@ import Footer from "./components/Footer/index.jsx"
 import Header from "./components/Header"
 import './App.css'
 import ScoreboardsGrid from "./components/ScoreboardsGrid"
-import Prediction from "./components/Prediction"
 function App() {
 
   return (
@@ -11,7 +10,6 @@ function App() {
           <div className={classes.app}>
               <Header/>
               <ScoreboardsGrid/>
-              <Prediction/>
               <Footer/>
           </div>
       </>
