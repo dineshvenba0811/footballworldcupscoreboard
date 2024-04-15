@@ -27,10 +27,15 @@ The scoreboard supports the following operations:
 Project Structure
 
 package.json - the configuration file of every Node.js app, created with npm or yarn, or any other package manager that uses the same approach.
+
 README.md - not much to say here - a simple text file that uses Markdown and contains the description of the project, plus any other information you want to put there.
+
 vite.config.js - the main configuration file that Vite uses, you get it when you do the installation from the previous step. The content of this file by default looks like this:
+
 setupTests.js - this one is used for configuring the unit tests, we put here any of the things we would like to have available in the tests we write.
-For example, in order to be able to use unique keys when rendering multiple elements (because we React needs it), I am using the randomUUID()method of the Crypto interface to generate a v4 UUID using a cryptographically secure random number generator. And to make it available in my tests, I need to add it here, like this:
+
+For example, in order to be able to use unique keys when rendering multiple elements (because we React needs it), I am using the randomUUID()method of the Crypto interface to generate a v4 UUID using a cryptographically secure random number generator.
+
 index.html - this the app’s entry point, simple html document that has few meta tags, includes the logo and the main script file
 /src – contains a few different things we need to discuss:
 
