@@ -8,7 +8,12 @@ import ScoresReducer, {actionTypes, initialState} from "./ScoresReducer";
 import useRandomInterval from "../../hooks/useRandomInterval";
 import {areAllGamesFinished, getRandomInt} from "../../utils";
 import useTimeout from "../../hooks/useTimeout";
-
+/**
+ * ScoreboardsGrid component executes the ScoresReducer.js and hooks useInterval,useRandomInterval,useTimeout.
+ * based on the execution it displays the score data of the matched in the application by sending the respective props to the component.
+ * it sends pairScore as props to Scoreboard component..
+ * it sends status as props to Scoreboard component..
+ **/
 
 const TIME_BEFORE_GAMES_START = 3; // seconds
 const PLAYING_TIME = 90000; // milliseconds
@@ -25,7 +30,6 @@ const ScoreboardsGrid = () => {
     // Initial countdown time interval
     useInterval(() => {
         setTimeElapsed((timeElapsed) => timeElapsed - 1);
-
         if (timeElapsed === 0) {
             setTimeElapsed(timeElapsed); // stop the timer
         }
@@ -51,6 +55,7 @@ const ScoreboardsGrid = () => {
         });
     }, ...updateScoreDelay);
 
+    // cancel all updates when game time completed.
     if (areAllGamesFinished(games)) {
         console.log(">>> All games finished. Cancel all updates.");
         cancelUpdateGameState();
@@ -64,7 +69,6 @@ const ScoreboardsGrid = () => {
     }, PLAYING_TIME);
 
     const getGameStatus = (isGameStarted) => isGameStarted ? 'Playing' : '';
-
     const getScoreBoardStateMessage = () => areAllGamesFinished(games) ? 'Summary'  : 'Current Games';
 
     return (
@@ -78,7 +82,6 @@ const ScoreboardsGrid = () => {
                                 key={crypto.randomUUID()}
                                 pairScore={pairScore}
                                 status={getGameStatus(pairScore.startedGame)}
-                                matchTime={PLAYING_TIME}
                             />))}
                     </div>
                 </> :

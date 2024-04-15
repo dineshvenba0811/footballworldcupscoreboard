@@ -1,6 +1,10 @@
 import classes from "./footer.module.scss";
 import packageJson from '../../../package.json';
 
+/**
+ * Footer component renders the footer part of the application which includes linkedin profile
+ * and github profile link.
+ **/
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
