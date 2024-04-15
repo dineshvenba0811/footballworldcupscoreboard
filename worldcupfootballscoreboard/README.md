@@ -1,4 +1,4 @@
-# React + Vite
+World Cup Scoreboard
 
 A live scoreboard is a digital sport scoreboard that automatically displays up-to-the-minute sports scores and data from a certain game – for example a football game. This way it’s much easier for the users to follow the game, make predictions or bets, and so on.
 
@@ -54,9 +54,6 @@ Let me walk you quickly through each of the components in the application. They 
 8. TeamView - another small components serving as a representation of a team, shows team’s flag and name
 
 How to Build the Project
-By now you should have a decent understanding of what our application is and how its various parts are put together.
-
-Let me guide you, step-by-step, from the very beginning, and show you how I built it. I will add images where necessary, so that it’s easier for all of you to follow along.
 
 Dependencies
 The dependencies we have are very few. Except Vite and Vitest, I have installed additionally only SASS, and React Testing Library.
@@ -79,3 +76,7 @@ npm run build
 to run the testcase execute the command
 
 npm run test
+
+to run the docker compose file execute the below command to create the docker image.
+
+docker-compose up --build
