@@ -1,4 +1,4 @@
-World Cup Scoreboard
+**World Cup Scoreboard**
 
 A live scoreboard is a digital sport scoreboard that automatically displays up-to-the-minute sports scores and data from a certain game – for example a football game. This way it’s much easier for the users to follow the game, make predictions or bets, and so on.
 
