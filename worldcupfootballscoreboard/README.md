@@ -1,12 +1,5 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 A live scoreboard is a digital sport scoreboard that automatically displays up-to-the-minute sports scores and data from a certain game – for example a football game. This way it’s much easier for the users to follow the game, make predictions or bets, and so on.
 
 Our application is going to reflect such a board, but in the browser.
@@ -65,7 +58,7 @@ By now you should have a decent understanding of what our application is and how
 
 Let me guide you, step-by-step, from the very beginning, and show you how I built it. I will add images where necessary, so that it’s easier for all of you to follow along.
 
-📦 Dependencies
+Dependencies
 The dependencies we have are very few. Except Vite and Vitest, I have installed additionally only SASS, and React Testing Library.
 
 Installation and Execution
