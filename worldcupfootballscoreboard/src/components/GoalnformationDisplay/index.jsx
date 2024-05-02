@@ -3,10 +3,12 @@ import Col from 'react-bootstrap/Col';
 import Accordion from 'react-bootstrap/Accordion';
 import classes from "./goalinformation.module.scss";
 /**
- * TeamView component renders the team information in the application by fetching the country flags from flagcdn.com .
- * it receives teamData as props from the Scoreboard component..
+ * GoalnformationDisplay component renders the team's goal information and yellowcard
+ * information in the application .
+ * it receives homeTeamData and awayTeamData as props from the Scoreboard component..
  **/
 const GoalnformationDisplay = ({homeTeamData,awayTeamData}) => {
+    // sort the data of the goal scored time and yellowcard time individually
     const sortedHomeGoals = homeTeamData.goalScoredTime.sort((a, b) => a.time - b.time);
     const sortedHomeYellowCards = homeTeamData.yellowCardTime.sort((a, b) => a.time - b.time);
     const sortedAwayGoals = awayTeamData.goalScoredTime.sort((a, b) => a.time - b.time);
