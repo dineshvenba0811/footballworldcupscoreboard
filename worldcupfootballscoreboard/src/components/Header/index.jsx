@@ -10,7 +10,7 @@ const Header = () => {
         <div className={classes.header}>
         <header>
             <img src='./logo.svg' alt='FIFA World Cup Scoreboard'/>
-            <h2>FIFA World Cup Scoreboard</h2>
+            <h2>FIFA World Cup Scoreboard 2024</h2>
         </header>
         </div>
     );

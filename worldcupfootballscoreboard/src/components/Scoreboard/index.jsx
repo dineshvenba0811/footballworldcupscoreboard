@@ -2,6 +2,10 @@ import classes from "./scoreboard.module.scss";
 import TeamView from "../TeamView";
 import Result from "../Result";
 import GameStatus from "../GameStatus";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import GoalnformationDisplay from "../GoalnformationDisplay/index.jsx";
+import Card from "react-bootstrap/Card";
 
 
 /**
@@ -13,15 +17,45 @@ import GameStatus from "../GameStatus";
  * to display the score information as home team score :[Result, Gamestatus]: away team score
  **/
 const Scoreboard = ({ pairScore, status }) => {
+
+    const homeGoals = pairScore.homeTeam.score > 0;
+    const awayGoals = pairScore.awayTeam.score > 0;
+
     return (
-        <section className={classes.scoreboard}>
-            <TeamView teamData={pairScore.homeTeam} />
-            <main>
-                <Result homeTeamScore={pairScore.homeTeam.score} awayTeamScore={pairScore.awayTeam.score} />
-                <GameStatus status={status} />
-            </main>
-            <TeamView teamData={pairScore.awayTeam} />
-        </section>
+
+        <Card >
+            <Card.Body>
+                <Card.Text>
+                    <Row>
+                        <Col xs={3}>
+                            <TeamView teamData={pairScore.homeTeam} />
+                        </Col>
+
+                        <Col xs={6}>
+                                <Result homeTeamScore={pairScore.homeTeam.score} awayTeamScore={pairScore.awayTeam.score}/>
+                                <GameStatus status={status}/>
+                        </Col>
+
+                        <Col xs={3}>
+                            <TeamView teamData={pairScore.awayTeam}/>
+                        </Col>
+                    </Row>
+                        <Row style={{ marginTop: '20px' }}>
+                            <GoalnformationDisplay homeTeamData={pairScore.homeTeam} awayTeamData={pairScore.awayTeam} />
+                        </Row>
+
+                </Card.Text>
+
+            </Card.Body>
+        </Card>
+
+
+
+
+
+
+
+
     );
 };
 

@@ -1,6 +1,8 @@
 import  { useState, useEffect } from "react";
-
-
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 const Prediction =() => {
     const initialValue = [
         { id: 0, value: " --- Select a Team ---" }];
@@ -26,16 +28,87 @@ const Prediction =() => {
 
     const [selectedOption, setSelectedOption] = useState(initialValue);
     const [predictionExecution, setPredictionExecution] = useState(false);
+
+    const handleSubmit = events => {
+
+    }
     return (
         <>
-            <form>
-                <select id="sectionDropdown" value={selectedOption} onChange={e => setSelectedOption(e.target.value)}>
-                    {selectedOption.map((localState, index) => (
-                        <option key={localState.id}>{localState.value}</option>
-                    ))}
-                </select>
+            <Row style={{ marginTop: '20px' }}>
+                <Col xs={3}>
+                    <span>Mexico</span>
+                </Col>
+                <Col xs={3}>
+                    <span>Canada</span>
+                </Col>
+                <Col xs={2}>
 
-            </form>
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+            </Row>
+
+            <Row style={{ marginTop: '20px' }}>
+                <Col xs={3}>
+                    <span>Spain</span>
+                </Col>
+                <Col xs={3}>
+                    <span>Brazil</span>
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+            </Row>
+
+            <Row style={{ marginTop: '20px' }}>
+                <Col xs={3}>
+                    <span>Germany</span>
+                </Col>
+                <Col xs={3}>
+                    <span>France</span>
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+            </Row>
+
+            <Row style={{ marginTop: '20px' }}>
+                <Col xs={3}>
+                    <span>Uruguay</span>
+                </Col>
+                <Col xs={3}>
+                    <span>Italy</span>
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+            </Row>
+
+            <Row style={{ marginTop: '20px' }}>
+                <Col xs={3}>
+                    <span>Argentina</span>
+                </Col>
+                <Col xs={3}>
+                    <span>Australia</span>
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+                <Col xs={2}>
+
+                </Col>
+            </Row>
+
         </>
     )
 }
