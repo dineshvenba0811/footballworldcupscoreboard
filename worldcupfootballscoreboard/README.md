@@ -80,3 +80,7 @@ npm run test
 to run the docker compose file execute the below command to create the docker image.
 
 docker-compose up --build
+
+
+Sample Screenshot of the application
+![](/private/var/folders/nc/_h0mpb9d65d56zy3v0295sgw0000gn/T/com.apple.Photos.NSItemProvider/uuid=11DA1B37-925A-47BE-B97D-2CCEB4554B93&library=1&type=1&mode=1&loc=true&cap=true.jpeg/Image 02-05-24 at 9.04 PM.jpeg)
