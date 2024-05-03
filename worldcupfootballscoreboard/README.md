@@ -41,19 +41,21 @@ Let me walk you quickly through each of the components in the application. They 
 
 2. GameStatus - Used to show if a game has started, i.e. playing
 
-3. Goalnformation -Displays the goal information of the match and yellow card details
+3. GoalDisplayStatus -Displays the goal information of the match
 
-3. Header - self-explanatory, contains the header part of the app
+4. Header - self-explanatory, contains the header part of the app
 
-4. MessageBoard - a small component used to display text messages, saying when the games are starting or if we are looking at the “Summary” screen or the “Current Games”
+5. MessageBoard - a small component used to display text messages, saying when the games are starting or if we are looking at the “Summary” screen or the “Current Games”
 
-5. Result - another small component showing game scores
+6. Result - another small component showing game scores
 
-6. Scoreboard - kind a parent component, serving as container that holds all the small ones in place
+7. Scoreboard - kind a parent component, serving as container that holds all the small ones in place
 
-7. ScoreboardGrid - this is the most important component in the app, as it contains all the logic related to the timers, holds all child components and it’s responsible for passing the necessary data to them via their props
+8. ScoreboardGrid - this is the most important component in the app, as it contains all the logic related to the timers, holds all child components and it’s responsible for passing the necessary data to them via their props
 
-8. TeamView - another small components serving as a representation of a team, shows team’s flag and name
+9. TeamView - another small components serving as a representation of a team, shows team’s flag and name
+
+10. YellowCardDisplay - displays the yellowcard information of the players in the match
 
 How to Build the Project
 
@@ -85,4 +87,6 @@ docker-compose up --build
 
 
 Sample Screenshot of the application
+
+added in the screenshots folder in the root directory of the repo
 
