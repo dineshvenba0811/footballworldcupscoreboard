@@ -1,4 +1,4 @@
-The initial version v1.0 of the program encompasses several key functionalities:
+# **The initial version **v1.0** of the program encompasses several key functionalities:**
 
 **Match Initialization with a Countdown**: The match starts automatically after a 3-second countdown. It will get updated via "Start Game"  reducer function
 
@@ -12,7 +12,7 @@ For instance, goals scored by either team are updated dynamically.
 **Post-Match Data Sorting**: After the match concludes, the accumulated match data undergoes sorting based on the total goals scored by each team, providing an organized summary of the game's outcome.
 
 
-In the second release of the football scorecard application, we've implemented the following features:
+# In the second release **v2.0** of the football scorecard application, we've implemented the following features:
 
 **Goal Tracking:** Users can now record and track the following goal-related information:
 
@@ -25,3 +25,5 @@ In the second release of the football scorecard application, we've implemented t
 * Player who received the yellow card
 * Time at which the yellow card was issued
 * Presentation of this information in the application's user interface
+
+application screenshots are added in the screenshots folder.
