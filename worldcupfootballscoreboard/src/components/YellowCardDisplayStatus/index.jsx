@@ -2,9 +2,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import classes from "./yellowcarddisplaystatus.module.scss";
 /**
- * YellowCardDisplayStatus component renders the players who got yellowcard and their
- * information in the application .
- * it receives teamData as props from the Scoreboard component..
+ * * YellowCardDisplayStatus component renders the players who received yellow cards and their information in the application.
+ *  * It receives `teamData` as props containing an array of objects with `time` and `name` properties.
  **/
 const YellowCardDisplayStatus = ({teamData}) => {
     // sort the data of the yellowcard time
@@ -21,7 +20,7 @@ const YellowCardDisplayStatus = ({teamData}) => {
                                 <span style={{display: 'inline-block'}} >{goal.name}</span>
                             </Col>
                             <Col xs={4}>
-                                <img src='./yellowCard.svg' width="20" height="20" style={{display: 'inline-block'}}/>
+                                <img src='./yellowCard.svg' alt="Yellow Card" style={{display: 'inline-block', width:"20", height:"20"}}/>
                             </Col>
                         </Row>
                     </div>
