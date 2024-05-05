@@ -17,7 +17,7 @@ const GoalDisplayStatus = ({teamData}) => {
                         </Row>
                         <Row>
                             <Col xs={8}><span style={{display: 'inline-block'}}>{goal.name}</span></Col>
-                            <Col xs={4}> <img src='./football.svg' alt="Football"  style={{display: 'inline-block', width:"12",  height:"12"}}/></Col>
+                            <Col xs={4}> <img src='./football.svg' alt="Football"  width="12"  height="12" style={{display: 'inline-block'}}/></Col>
                         </Row>
                     </div>
                 ))}

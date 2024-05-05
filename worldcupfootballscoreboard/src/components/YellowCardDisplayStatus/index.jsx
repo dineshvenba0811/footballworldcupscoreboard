@@ -20,7 +20,7 @@ const YellowCardDisplayStatus = ({teamData}) => {
                                 <span style={{display: 'inline-block'}} >{goal.name}</span>
                             </Col>
                             <Col xs={4}>
-                                <img src='./yellowCard.svg' alt="Yellow Card" style={{display: 'inline-block', width:"20", height:"20"}}/>
+                                <img src='./yellowCard.svg' alt="Yellow Card" width="20" height="20" style={{display: 'inline-block' }}/>
                             </Col>
                         </Row>
                     </div>
